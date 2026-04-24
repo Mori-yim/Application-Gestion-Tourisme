@@ -80,38 +80,38 @@ Docker (optionnel)
 CI/CD (optionnel)
 
 🧩 Architecture du projet
-fullstack-angular-springboot/
+fullstack-angular-springboot/<br>
+│<br>
+├── backend/<br>
+│   ├── src/main/java/com/example/app/<br>
+│   │   ├── controller/      # API REST<br>
+│   │   ├── service/         # Logique métier<br>
+│   │   ├── repository/      # Accès aux données<br>
+│   │   ├── model/           # Entités JPA<br>
+│   │   ├── security/        # Sécurité & JWT<br>
+│   │   └── AppApplication.java<br>
+│   │<br>
+│   └── src/main/resources/<br>
+│       ├── application.yml<br>
+│       └── data.sql<br>
+│<br>
+├── frontend/<br>
+│   ├── src/app/<br>
+│   │   ├── components/      # Composants Angular<br>
+│   │   ├── services/        # Services HTTP<br>
+│   │   ├── models/          # Interfaces / DTO<br>
+│   │   ├── guards/          # Sécurité des routes<br>
+│   │   └── app.module.ts<br>
+│   │<br>
+│   └── angular.json<br>
+│<br>
+├── docker/<br>
+│   ├── Dockerfile.backend<br>
+│   ├── Dockerfile.frontend<br>
+│   └── docker-compose.yml<br>
 │
-├── backend/
-│   ├── src/main/java/com/example/app/
-│   │   ├── controller/      # API REST
-│   │   ├── service/         # Logique métier
-│   │   ├── repository/      # Accès aux données
-│   │   ├── model/           # Entités JPA
-│   │   ├── security/        # Sécurité & JWT
-│   │   └── AppApplication.java
-│   │
-│   └── src/main/resources/
-│       ├── application.yml
-│       └── data.sql
-│
-├── frontend/
-│   ├── src/app/
-│   │   ├── components/      # Composants Angular
-│   │   ├── services/        # Services HTTP
-│   │   ├── models/          # Interfaces / DTO
-│   │   ├── guards/          # Sécurité des routes
-│   │   └── app.module.ts
-│   │
-│   └── angular.json
-│
-├── docker/
-│   ├── Dockerfile.backend
-│   ├── Dockerfile.frontend
-│   └── docker-compose.yml
-│
-├── README.md
-└── .gitignore
+├── README.md<br>
+└── .gitignore<br>
 
 🔐 Fonctionnalités principales
 
